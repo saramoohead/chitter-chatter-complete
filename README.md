@@ -4,7 +4,7 @@ SOC summary
 
 The first weekend challenge I was able to complete by Monday morning with a working system - and my first course sticker! 
 
-Test driven through Cucumber and using the Sinatra framework, the system allows users tp sign up, sign in and sign out. They sign in to post peeps and can view all peeps without signing in.
+Test driven through Cucumber and using the Sinatra framework, the system allows users tp sign up, sign in and sign out. They sign in to post peeps and can view all peeps without signing in, in reverse chronological order.
 
 
 Technologies Used
