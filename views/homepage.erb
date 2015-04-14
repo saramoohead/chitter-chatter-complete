@@ -1,5 +1,5 @@
 
-<% if !@username %>
+<% unless current_user %>
 <h3>Sign in to post a Peep</h3>
 <form action='/sessions' method='post'>
   Enter your username: <input type='text' name='username'>
@@ -7,15 +7,16 @@
   <input type='submit' value='Sign in'>
 </form>
 
-<h3>Or <a href="/users/new">click here</a> to register</h3>
+<h2>Or <a href="/users/new">click here</a> to register</h2>
 <% end %>
 
 <% if flash[:notice] %>
   <div id='notice'><%= flash[:notice] %></div>
 <% end %>
 
-<% Peep.reverse_each do |peep| %>
+
+<% Peep.each do |peep| %>
   <ul>
-    <li><%= peep.peep_content %></li>
+    <li><%= peep.message %></li>
   </ul>
 <% end %>

@@ -2,8 +2,8 @@ class Peep
 
   include DataMapper::Resource
 
-  property :peep_id, Serial
-  property :peep_content, String
+  property :id, Serial # this should be just id
+  property :message, String
   property :created_at, DateTime
 
 end

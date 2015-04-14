@@ -1,23 +1,18 @@
 
-SOC pull request comments
+SOC summary
 =================
 
-I'm really proud of myself this weekend. I made an MVP, which is the first time I've been able to do that.
+The first weekend challenge I was able to complete by Monday morning with a working system - and my first course sticker! 
 
-Unfortunately, I cannot make the final test pass. Though I can see from my session inspects that the sessions to persist, when I click "Peep" it resets the session somehow.
+Test driven through Cucumber and using the Sinatra framework, the system allows users tp sign up, sign in and sign out. They sign in to post peeps and can view all peeps without signing in.
 
-I suspect the same or a similar problem is preventing me from splitting my user.feature into more than one .feature.
-
-For future development, I would like to include partials and add styling.
+(After my code review session, I need to refactor peeps_spec.rb, tidy up my classname_id categories, and utilise calling erb files from other erb files - and better understand the current_user helper.)
 
 
 Technologies Used
 =================
 
 Ruby, Sinatra, DataMapper, Cucumber, Capybara, RSpec, RackFlash
-
-
-
 
 
 Chitter Challenge Instructions

@@ -37,7 +37,7 @@ Feature: user management
 
   Scenario: post peep
     Given I log in
-    When I fill in "peep_content" with "Today is good"
+    When I fill in "message" with "Today is good"
     And I click "Peep"
     Then I create a new Peep
     And I see "Peep has been posted!"
@@ -48,4 +48,5 @@ Feature: user management
 
   Scenario: see all peeps in reverse order
     Given I am on the homepage
+    And I have created two peeps
     Then I see peeps in reverse chronological order

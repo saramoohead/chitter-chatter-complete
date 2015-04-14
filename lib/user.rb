@@ -6,10 +6,10 @@ class User
 
   attr_accessor :password
 
-  property :user_id, Serial
+  property :id, Serial
   property :username, String, unique: true, message: 'Sorry, that username is already taken.'
-  property :real_name, String
-  property :email, String
+  property :name, String
+  property :email, String, unique: true, message: 'That email is already registered.'
   property :password_digest, Text
 
   def password=(password)

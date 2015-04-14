@@ -52,10 +52,15 @@ Then(/^I create a new Peep$/) do
   expect(Peep.all.count).to eq(1)
 end
 
-Then(/^I see peeps in reverse chronological order$/) do
+Given(/^I have created two peeps$/) do
   log_in
-  Peep.create(peep_content: "Sanjay is awesome.")
-  Peep.create(peep_content: "I am sleepy.")
+  fill_in "message", with: "I am sleepy."
+  click_button "Peep"
+  fill_in "message", with: "Sanjay is awesome."
+  click_button "Peep"
+end
+
+Then(/^I see peeps in reverse chronological order$/) do
   expect(page).to have_content("I am sleepy.")
   expect(page).to have_content("Sanjay is awesome.")
 end
