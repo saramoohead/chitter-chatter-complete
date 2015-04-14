@@ -61,8 +61,9 @@ Given(/^I have created two peeps$/) do
 end
 
 Then(/^I see peeps in reverse chronological order$/) do
-  expect(page).to have_content("I am sleepy.")
-  expect(page).to have_content("Sanjay is awesome.")
+  first_peep = (page.body.index("I am sleepy.")).to_i
+  second_peep = (page.body.index("Sanjay is awesome.")).to_i
+  expect(first_peep).to be < second_peep
 end
 
 def log_in
