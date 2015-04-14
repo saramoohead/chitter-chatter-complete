@@ -6,8 +6,6 @@ The first weekend challenge I was able to complete by Monday morning with a work
 
 Test driven through Cucumber and using the Sinatra framework, the system allows users tp sign up, sign in and sign out. They sign in to post peeps and can view all peeps without signing in.
 
-(After my code review session, I need to refactor peeps_spec.rb, tidy up my classname_id categories, and utilise calling erb files from other erb files - and better understand the current_user helper.)
-
 
 Technologies Used
 =================
