@@ -1,0 +1,29 @@
+/* CSS for adding content example */
+
+.users {
+  background-color: #d2d2d2;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.peep_form {
+  height: 80px;
+  text-align: center;
+}
+
+.peeps {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.glyphicon-record {
+  padding-right: 10px;
+}
+
+/* Fix for full-screen background image: Chrome on Android */
+html {
+    height:100%;
+    min-height:100%;}
+body {
+    min-height:100%;}

@@ -1,22 +1,9 @@
-
-<% unless current_user %>
-<h3>Sign in to post a Peep</h3>
-<form action='/sessions' method='post'>
-  Enter your username: <input type='text' name='username'>
-  And your password: <input type='password' name='password'>
-  <input type='submit' value='Sign in'>
-</form>
-
-<h2>Or <a href="/users/new">click here</a> to register</h2>
-<% end %>
-
-<% if flash[:notice] %>
-  <div id='notice'><%= flash[:notice] %></div>
-<% end %>
-
-
-<% Peep.each do |peep| %>
-  <ul>
-    <li><%= peep.message %></li>
-  </ul>
-<% end %>
+<div class="row">
+  <div class="peeps" class="col-xs-12">
+    <% Peep.each do |peep| %>
+      <ul>
+        <li><span class="glyphicon glyphicon-record"></span><%= peep.message %></li>
+      </ul>
+    <% end %>
+  </div>
+</div>

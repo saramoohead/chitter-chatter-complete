@@ -1,4 +1,13 @@
-  <form action='/peeps/new' method='post'>
-    <input type='text' name='message'>
-    <input type='submit' value='Peep'>
-  </form>
+<div class="row">
+  <div class="peep_form" class="col-xs-12">
+    <h3>
+      <form action='/peeps/new' method='post'>
+        <input type='text' name='message'>
+        <input type='submit' value='Peep'>
+      </form>
+    </h3>
+    <% if flash[:notice] %>
+      <div id='notice'><%= flash[:notice] %></div>
+    <% end %>
+  </div>
+</div>

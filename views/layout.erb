@@ -1,14 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chitter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+
 <body>
-  <% if current_user %>
-  <h2>Welcome <%= current_user.username%>.</h2>
-  <form action='/sessions/end' method='post'>
-    <input type='hidden' name='_method' value='delete'>
-    <input type='submit' value='Sign out'>
-  </form>
-
-  <%= erb :'peeps/new' %> <!-- peep form -->
-
-  <% end %>
-
-  <%= yield %>
+  <div class="container">
+    <%= erb :'manageuser' %>
+    <%= yield %>
+  </div>
 </body>
+</html>

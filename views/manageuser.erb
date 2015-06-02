@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="users" class="col-xs-12">
+    <% if current_user %>
+    <h3>Welcome, <%= current_user.username%>.</h3>
+    <form action='/sessions/end' method='post'>
+      <input type='hidden' name='_method' value='delete'>
+      <input type='submit' value='Sign out'>
+    </form>
+    <%= erb :'peeps/new' %>
+    <% else %>
+      <h3>Sign in to post a Peep</h3><h5>or <a href="/users/new">register here</a>.</h5>
+      <form action='/sessions' method='post'>
+          <input type='text' name='username' placeholder='Username'></li>
+          <input type='password' name='password' placeholder='Password'></li>
+          <input type='submit' value='Sign in'>
+      </form>
+    <% end %>
+  </div>
+</div>
