@@ -6,7 +6,10 @@ The first weekend challenge I was able to complete by Monday morning with a work
 
 Test driven through Cucumber to RSpec and using the Sinatra framework, the system allows users tp sign up, sign in and sign out. They sign in to post peeps and can view all peeps without signing in.
 
-In coming back to layer in CSS, I've refactored the partials to be much more logically organised. For example, the user management segements were all over the place, but are now pulled together in a user management partial.
+In coming back to layer in CSS, I've refactored the partials to be much more logically organised and added logic to the partial displays. For example, the user management segements were all over the place, but are now pulled together in a user management partial. The new user page turns off the main user management partial.
+
+<img src="public/chitter_screen_shot.png">
+
 
 
 Technologies Used
