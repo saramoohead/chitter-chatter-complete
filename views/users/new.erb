@@ -1,17 +1,23 @@
 
-<h3>Sign up here</h3>
-<form action='/users' method='post'>
-  <input type='text' name='username' placeholder="Username">
-  <input type='text' name='real_name' placeholder="Real name">
-  <input type='email' name='email' placeholder="Email address">
-  <input type='password' name='password' placeholder="Password">
-  <input type='submit' value='Register'>
-</form>
+<div class="row">
+  <div class="users" class="col-xs-12">
 
-<% if flash[:errors] && !flash[:errors].empty? %>
-  <ul id='errors'>
-    <% flash[:errors].each do |error| %>
-      <li><%= error %></li>
+    <h3>Sign up here</h3>
+    <form action='/users' method='post'>
+      <input type='text' name='username' placeholder="Username">
+      <input type='text' name='real_name' placeholder="Real name">
+      <input type='email' name='email' placeholder="Email address">
+      <input type='password' name='password' placeholder="Password">
+      <input type='submit' value='Register'>
+    </form>
+
+    <% if flash[:errors] && !flash[:errors].empty? %>
+      <ul id='errors'>
+        <% flash[:errors].each do |error| %>
+          <li><%= error %></li>
+        <% end %>
+      </ul>
     <% end %>
-  </ul>
-<% end %>
+
+  </div>
+</div>

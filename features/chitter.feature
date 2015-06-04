@@ -10,7 +10,7 @@ Feature: user management
     And I fill in "email" with "saramoo@hotmail.com"
     And I fill in "password" with "password"
     And I click "Register"
-    Then I see "Welcome saramoohead."
+    Then I see "Welcome, saramoohead."
   
   Scenario: sign in
     Given the user "saramoohead" exists
@@ -19,13 +19,13 @@ Feature: user management
     And I fill in "password" with "password"
     And I click "Sign in"
     And my "username" and "password" are authenticated
-    Then I see "Welcome saramoohead."
+    Then I see "Welcome, saramoohead."
 
   Scenario: sign out
     Given I log in
-    And I see "Welcome saramoohead"
+    And I see "Welcome, saramoohead"
     When I click "Sign out"
-    Then I do not see "Welcome saramoohead."
+    Then I do not see "Welcome, saramoohead."
 
   Scenario: cannot sign up if username is taken
     Given I am in the sign up section
