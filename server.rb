@@ -23,6 +23,7 @@ class ChitterChatter < Sinatra::Base
   end
 
   get '/users/new' do
+    @new_user = true
     erb :'users/new'
   end
 

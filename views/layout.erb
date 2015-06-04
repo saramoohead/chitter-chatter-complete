@@ -10,7 +10,9 @@
 
 <body>
   <div class="container">
-    <%= erb :'manageuser' %>
+    <% unless @new_user %>
+      <%= erb :'manageuser' %>
+    <% end %>
     <%= yield %>
   </div>
 </body>
