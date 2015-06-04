@@ -1,6 +1,6 @@
-Feature: user management
+Feature: posting peeps on Chitter
   So that I can post messages on Chitter as me
-  As a Maker
+  As a peep poster
   I want to be able to register, log into and log out of Chitter
 
   Scenario: sign up
