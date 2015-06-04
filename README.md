@@ -20,7 +20,7 @@ cd chitter-chatter-complete
 bundle install
 rake
 rackup
--- visit http://localhost:9292/
+visit http://localhost:9292/
 ```
 
 Technologies Used
