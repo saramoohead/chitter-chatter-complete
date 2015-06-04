@@ -12,6 +12,15 @@ In coming back to layer in CSS, I've refactored the partials to be much more log
 
 
 
+To install, see tests and see in local browser
+=================
+git clone git@github.com:saramoohead/chitter-chatter-complete.git
+cd chitter-chatter-complete
+bundle install
+rake
+rackup
+-- visit http://localhost:9292/
+
 Technologies Used
 =================
 
